@@ -1,0 +1,180 @@
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #282c34;
+    color: #abb2bf;
+}
+#information {
+    text-align: center; /* Menengahkan seluruh isi section */
+}
+
+#information p {
+    text-align: justify; /* Mengatur paragraf justify */
+    width: 80%; /* Mengatur lebar paragraf agar tidak terlalu lebar */
+    margin: 0 auto; /* Menengahkan paragraf */
+}
+header {
+    text-align: center;
+    padding: 2em 0;
+}
+
+header h1 {
+    color: #61dafb;
+}
+
+nav a img {
+    width: 30px;
+    margin: 0 10px;
+}
+
+section {
+    width: 80%;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #383e4a;
+    border-radius: 5px;
+}
+
+#projects {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.card {
+    width: 300px;
+    background-color: #21252b;
+    border-radius: 5px;
+    padding: 1em;
+    margin-bottom: 20px;
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.card a {
+    display: inline-block;
+    background-color: #61dafb;
+    color: #282c34;
+    padding: 0.5em 1em;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.changelogs {
+    background-color: #21252b; /* Warna latar belakang card changelogs */
+    border-radius: 5px;
+    padding: 1em;
+    margin-top: 10px;
+}
+
+.changelogs h4 {
+    margin-top: 0;
+    text-align: center; 
+}
+
+.changelogs ul {
+    list-style-type: disc;
+    margin-left: 20px;
+}
+
+.changelogs ul li {
+    margin-bottom: 5px;
+}
+
+.changelogs ul li strong {
+    font-weight: bold;
+}
+
+audio#bgm {
+    position: fixed;
+    top: -100px; /* Menyembunyikan pemutar di luar layar */
+    left: -100px; /* Menyembunyikan pemutar di luar layar */
+    z-index: -1; /* Menempatkan pemutar di belakang konten lain */
+}
+
+.welcome-text {
+    font-size: 2em;
+    white-space: nowrap;
+    overflow: hidden;
+    width: 0;
+    margin: 0 auto;
+    display: table;
+    animation: typing 3s steps(7, end) forwards; /* Hapus animasi blink-caret */
+}
+
+@keyframes typing {
+    from { width: 0 }
+    to { width: 7em }
+}
+
+footer {
+    text-align: center;
+    padding: 1em 0;
+    background-color: #21252b;
+}
+
+#profiles {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.profile {
+    width: 300px;
+    text-align: center;
+}
+
+.profile img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+.profile-link {
+    display: inline-block;
+    background-color: #61dafb; /* Warna latar belakang tombol */
+    color: #282c34; /* Warna teks tombol */
+    padding: 0.5em 1em;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold; /* Teks tebal */
+}
+
+
+#social-media {
+    text-align: center;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.social-icon {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%; /* Membuat ikon bulat */
+    margin: 0 10px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.instagram {
+    background-image: url('images/instagram-icon.jpg');
+}
+
+.tiktok {
+    background-image: url('images/tiktok-icon.jpg');
+}
+
